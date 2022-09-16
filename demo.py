@@ -1,0 +1,3 @@
+msg = "tests"
+
+print(msg)
