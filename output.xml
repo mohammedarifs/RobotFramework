@@ -1,339 +1,339 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.7.0 on win32)" generated="20220919 21:12:37.018" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.7.0 on win32)" generated="20220919 21:53:03.245" rpa="false" schemaversion="3">
 <suite id="s1" name="Test" source="C:\Users\DELL\robotframework\RobotFramework\Automation\Test.robot">
 <test id="s1-t1" name="Goole Search" line="9">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${URL}</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220919 21:12:38.635" level="INFO">Opening browser 'chrome' to base url 'http://google.com'.</msg>
-<status status="PASS" starttime="20220919 21:12:38.618" endtime="20220919 21:13:14.301"/>
+<msg timestamp="20220919 21:53:04.918" level="INFO">Opening browser 'chrome' to base url 'http://google.com'.</msg>
+<status status="PASS" starttime="20220919 21:53:04.918" endtime="20220919 21:53:24.249"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220919 21:13:14.303" endtime="20220919 21:13:14.730"/>
+<status status="PASS" starttime="20220919 21:53:24.249" endtime="20220919 21:53:24.497"/>
 </kw>
 <kw name="Create File" library="OperatingSystem">
 <arg>${path}</arg>
 <doc>Creates a file with the given content and encoding.</doc>
-<msg timestamp="20220919 21:13:14.737" level="INFO" html="true">Created file '&lt;a href="file://C:\Users\DELL\robotframework\RobotFramework\Automation\write_to_file.text"&gt;C:\Users\DELL\robotframework\RobotFramework\Automation\write_to_file.text&lt;/a&gt;'.</msg>
-<status status="PASS" starttime="20220919 21:13:14.733" endtime="20220919 21:13:14.737"/>
+<msg timestamp="20220919 21:53:24.498" level="INFO" html="true">Created file '&lt;a href="file://C:\Users\DELL\robotframework\RobotFramework\Automation\write_to_file.text"&gt;C:\Users\DELL\robotframework\RobotFramework\Automation\write_to_file.text&lt;/a&gt;'.</msg>
+<status status="PASS" starttime="20220919 21:53:24.498" endtime="20220919 21:53:24.498"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>xpath://input[@title="Search"]</arg>
 <arg>robot framework</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220919 21:13:14.739" level="INFO">Typing text 'robot framework' into text field 'xpath://input[@title="Search"]'.</msg>
-<status status="PASS" starttime="20220919 21:13:14.737" endtime="20220919 21:13:16.185"/>
+<msg timestamp="20220919 21:53:24.498" level="INFO">Typing text 'robot framework' into text field 'xpath://input[@title="Search"]'.</msg>
+<status status="PASS" starttime="20220919 21:53:24.498" endtime="20220919 21:53:25.554"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>xpath://input[@title="Search"]</arg>
 <arg>ENTER</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20220919 21:13:16.188" level="INFO">Sending key(s) ('ENTER',) to xpath://input[@title="Search"] element.</msg>
-<msg timestamp="20220919 21:13:16.949" level="INFO">Pressing special key ENTER to element.</msg>
-<msg timestamp="20220919 21:13:16.949" level="INFO">Releasing special key ENTER.</msg>
-<status status="PASS" starttime="20220919 21:13:16.186" endtime="20220919 21:13:33.244"/>
+<msg timestamp="20220919 21:53:25.555" level="INFO">Sending key(s) ('ENTER',) to xpath://input[@title="Search"] element.</msg>
+<msg timestamp="20220919 21:53:26.255" level="INFO">Pressing special key ENTER to element.</msg>
+<msg timestamp="20220919 21:53:26.255" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20220919 21:53:25.555" endtime="20220919 21:53:32.389"/>
 </kw>
 <kw name="Get WebElements" library="SeleniumLibrary">
 <var>${elem}</var>
 <arg>xpath://div[@id="rso"]/child::div//div[@data-header-feature="0"]//a</arg>
 <doc>Returns a list of WebElement objects matching the ``locator``.</doc>
-<msg timestamp="20220919 21:13:33.308" level="INFO">${elem} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="432f9e219899da073a2ea00e0e9f9a0b", element="b6d35bbf-73b1-426a-920f-cd4809849bc4")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
-<status status="PASS" starttime="20220919 21:13:33.245" endtime="20220919 21:13:33.308"/>
+<msg timestamp="20220919 21:53:32.422" level="INFO">${elem} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="3a7eb7cf3be24f44cf255e6dafc14083", element="6aab37cf-a560-407d-bdf9-71779d9e04d5")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
+<status status="PASS" starttime="20220919 21:53:32.390" endtime="20220919 21:53:32.422"/>
 </kw>
 <for flavor="IN">
 <var>${item}</var>
 <value>@{elem}</value>
 <iter>
-<var name="${item}">&lt;selenium.webdriver.remote.webelement.WebElement (session="432f9e219899da073a2ea00e0e9f9a0b", element="b6d35bbf-73b1-426a-920f-cd4809849bc4")&gt;</var>
+<var name="${item}">&lt;selenium.webdriver.remote.webelement.WebElement (session="3a7eb7cf3be24f44cf255e6dafc14083", element="6aab37cf-a560-407d-bdf9-71779d9e04d5")&gt;</var>
 <kw name="Get Text" library="SeleniumLibrary">
 <var>${label}</var>
 <arg>${item}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20220919 21:13:33.468" level="INFO">${label} = Robot Framework Tutorial - Tutorialspoint
+<msg timestamp="20220919 21:53:32.859" level="INFO">${label} = Robot Framework Tutorial - Tutorialspoint
 https://www.tutorialspoint.com › robot_framework</msg>
-<status status="PASS" starttime="20220919 21:13:33.308" endtime="20220919 21:13:33.468"/>
+<status status="PASS" starttime="20220919 21:53:32.425" endtime="20220919 21:53:32.859"/>
 </kw>
 <kw name="Get Element Attribute" library="SeleniumLibrary">
 <var>${texts}</var>
 <arg>${item}</arg>
 <arg>href</arg>
 <doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
-<msg timestamp="20220919 21:13:33.538" level="INFO">${texts} = https://www.tutorialspoint.com/robot_framework/index.htm</msg>
-<status status="PASS" starttime="20220919 21:13:33.468" endtime="20220919 21:13:33.538"/>
+<msg timestamp="20220919 21:53:32.957" level="INFO">${texts} = https://www.tutorialspoint.com/robot_framework/index.htm</msg>
+<status status="PASS" starttime="20220919 21:53:32.859" endtime="20220919 21:53:32.957"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${label}${texts}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220919 21:13:33.539" endtime="20220919 21:13:33.541"/>
+<status status="PASS" starttime="20220919 21:53:32.957" endtime="20220919 21:53:32.960"/>
 </kw>
 <kw name="Convert To String" library="BuiltIn">
 <var>${link}</var>
 <arg>${texts}</arg>
 <doc>Converts the given item to a Unicode string.</doc>
-<msg timestamp="20220919 21:13:33.555" level="INFO">${link} = https://www.tutorialspoint.com/robot_framework/index.htm</msg>
-<status status="PASS" starttime="20220919 21:13:33.554" endtime="20220919 21:13:33.555"/>
+<msg timestamp="20220919 21:53:32.960" level="INFO">${link} = https://www.tutorialspoint.com/robot_framework/index.htm</msg>
+<status status="PASS" starttime="20220919 21:53:32.960" endtime="20220919 21:53:32.961"/>
 </kw>
 <kw name="Append To File" library="OperatingSystem">
 <arg>${path}</arg>
 <arg>${label}\nLink--${link}\n--------------\n</arg>
 <arg>UTF-8</arg>
 <doc>Appends the given content to the specified file.</doc>
-<msg timestamp="20220919 21:13:33.557" level="INFO" html="true">Appended to file '&lt;a href="file://C:\Users\DELL\robotframework\RobotFramework\Automation\write_to_file.text"&gt;C:\Users\DELL\robotframework\RobotFramework\Automation\write_to_file.text&lt;/a&gt;'.</msg>
-<status status="PASS" starttime="20220919 21:13:33.555" endtime="20220919 21:13:33.557"/>
+<msg timestamp="20220919 21:53:32.961" level="INFO" html="true">Appended to file '&lt;a href="file://C:\Users\DELL\robotframework\RobotFramework\Automation\write_to_file.text"&gt;C:\Users\DELL\robotframework\RobotFramework\Automation\write_to_file.text&lt;/a&gt;'.</msg>
+<status status="PASS" starttime="20220919 21:53:32.961" endtime="20220919 21:53:32.961"/>
 </kw>
-<status status="PASS" starttime="20220919 21:13:33.308" endtime="20220919 21:13:33.557"/>
+<status status="PASS" starttime="20220919 21:53:32.424" endtime="20220919 21:53:32.961"/>
 </iter>
 <iter>
-<var name="${item}">&lt;selenium.webdriver.remote.webelement.WebElement (session="432f9e219899da073a2ea00e0e9f9a0b", element="2d6164f0-d940-4356-9378-255d1f726588")&gt;</var>
+<var name="${item}">&lt;selenium.webdriver.remote.webelement.WebElement (session="3a7eb7cf3be24f44cf255e6dafc14083", element="2bf06f05-035b-41fd-9604-60a323e62c16")&gt;</var>
 <kw name="Get Text" library="SeleniumLibrary">
 <var>${label}</var>
 <arg>${item}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20220919 21:13:33.604" level="INFO">${label} = Robot Framework - GitHub
+<msg timestamp="20220919 21:53:33.095" level="INFO">${label} = Robot Framework - GitHub
 https://github.com › robotframework › robotframework</msg>
-<status status="PASS" starttime="20220919 21:13:33.559" endtime="20220919 21:13:33.604"/>
+<status status="PASS" starttime="20220919 21:53:32.961" endtime="20220919 21:53:33.096"/>
 </kw>
 <kw name="Get Element Attribute" library="SeleniumLibrary">
 <var>${texts}</var>
 <arg>${item}</arg>
 <arg>href</arg>
 <doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
-<msg timestamp="20220919 21:13:33.635" level="INFO">${texts} = https://github.com/robotframework/robotframework</msg>
-<status status="PASS" starttime="20220919 21:13:33.605" endtime="20220919 21:13:33.635"/>
+<msg timestamp="20220919 21:53:33.178" level="INFO">${texts} = https://github.com/robotframework/robotframework</msg>
+<status status="PASS" starttime="20220919 21:53:33.096" endtime="20220919 21:53:33.178"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${label}${texts}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220919 21:13:33.636" endtime="20220919 21:13:33.637"/>
+<status status="PASS" starttime="20220919 21:53:33.178" endtime="20220919 21:53:33.178"/>
 </kw>
 <kw name="Convert To String" library="BuiltIn">
 <var>${link}</var>
 <arg>${texts}</arg>
 <doc>Converts the given item to a Unicode string.</doc>
-<msg timestamp="20220919 21:13:33.638" level="INFO">${link} = https://github.com/robotframework/robotframework</msg>
-<status status="PASS" starttime="20220919 21:13:33.637" endtime="20220919 21:13:33.638"/>
+<msg timestamp="20220919 21:53:33.184" level="INFO">${link} = https://github.com/robotframework/robotframework</msg>
+<status status="PASS" starttime="20220919 21:53:33.183" endtime="20220919 21:53:33.184"/>
 </kw>
 <kw name="Append To File" library="OperatingSystem">
 <arg>${path}</arg>
 <arg>${label}\nLink--${link}\n--------------\n</arg>
 <arg>UTF-8</arg>
 <doc>Appends the given content to the specified file.</doc>
-<msg timestamp="20220919 21:13:33.639" level="INFO" html="true">Appended to file '&lt;a href="file://C:\Users\DELL\robotframework\RobotFramework\Automation\write_to_file.text"&gt;C:\Users\DELL\robotframework\RobotFramework\Automation\write_to_file.text&lt;/a&gt;'.</msg>
-<status status="PASS" starttime="20220919 21:13:33.638" endtime="20220919 21:13:33.639"/>
+<msg timestamp="20220919 21:53:33.184" level="INFO" html="true">Appended to file '&lt;a href="file://C:\Users\DELL\robotframework\RobotFramework\Automation\write_to_file.text"&gt;C:\Users\DELL\robotframework\RobotFramework\Automation\write_to_file.text&lt;/a&gt;'.</msg>
+<status status="PASS" starttime="20220919 21:53:33.184" endtime="20220919 21:53:33.184"/>
 </kw>
-<status status="PASS" starttime="20220919 21:13:33.557" endtime="20220919 21:13:33.639"/>
+<status status="PASS" starttime="20220919 21:53:32.961" endtime="20220919 21:53:33.184"/>
 </iter>
 <iter>
-<var name="${item}">&lt;selenium.webdriver.remote.webelement.WebElement (session="432f9e219899da073a2ea00e0e9f9a0b", element="92e8cd92-5d4e-4622-968a-7514b1b74b6c")&gt;</var>
+<var name="${item}">&lt;selenium.webdriver.remote.webelement.WebElement (session="3a7eb7cf3be24f44cf255e6dafc14083", element="6ddde860-e7e8-48fc-9868-0ea43b0897b2")&gt;</var>
 <kw name="Get Text" library="SeleniumLibrary">
 <var>${label}</var>
 <arg>${item}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20220919 21:13:33.674" level="INFO">${label} = Robot Framework - Wikipedia
+<msg timestamp="20220919 21:53:33.256" level="INFO">${label} = Robot Framework - GitHub
+https://github.com › robotframework</msg>
+<status status="PASS" starttime="20220919 21:53:33.184" endtime="20220919 21:53:33.256"/>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<var>${texts}</var>
+<arg>${item}</arg>
+<arg>href</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<msg timestamp="20220919 21:53:33.277" level="INFO">${texts} = https://github.com/robotframework</msg>
+<status status="PASS" starttime="20220919 21:53:33.257" endtime="20220919 21:53:33.277"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${label}${texts}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220919 21:53:33.277" endtime="20220919 21:53:33.278"/>
+</kw>
+<kw name="Convert To String" library="BuiltIn">
+<var>${link}</var>
+<arg>${texts}</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<msg timestamp="20220919 21:53:33.278" level="INFO">${link} = https://github.com/robotframework</msg>
+<status status="PASS" starttime="20220919 21:53:33.278" endtime="20220919 21:53:33.278"/>
+</kw>
+<kw name="Append To File" library="OperatingSystem">
+<arg>${path}</arg>
+<arg>${label}\nLink--${link}\n--------------\n</arg>
+<arg>UTF-8</arg>
+<doc>Appends the given content to the specified file.</doc>
+<msg timestamp="20220919 21:53:33.278" level="INFO" html="true">Appended to file '&lt;a href="file://C:\Users\DELL\robotframework\RobotFramework\Automation\write_to_file.text"&gt;C:\Users\DELL\robotframework\RobotFramework\Automation\write_to_file.text&lt;/a&gt;'.</msg>
+<status status="PASS" starttime="20220919 21:53:33.278" endtime="20220919 21:53:33.278"/>
+</kw>
+<status status="PASS" starttime="20220919 21:53:33.184" endtime="20220919 21:53:33.278"/>
+</iter>
+<iter>
+<var name="${item}">&lt;selenium.webdriver.remote.webelement.WebElement (session="3a7eb7cf3be24f44cf255e6dafc14083", element="170973a5-f62f-4cf6-ac5f-ce11f84acdc2")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${label}</var>
+<arg>${item}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220919 21:53:33.315" level="INFO">${label} = Robot Framework - Wikipedia
 https://en.wikipedia.org › wiki › Robot_Framework</msg>
-<status status="PASS" starttime="20220919 21:13:33.639" endtime="20220919 21:13:33.674"/>
+<status status="PASS" starttime="20220919 21:53:33.278" endtime="20220919 21:53:33.315"/>
 </kw>
 <kw name="Get Element Attribute" library="SeleniumLibrary">
 <var>${texts}</var>
 <arg>${item}</arg>
 <arg>href</arg>
 <doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
-<msg timestamp="20220919 21:13:33.693" level="INFO">${texts} = https://en.wikipedia.org/wiki/Robot_Framework</msg>
-<status status="PASS" starttime="20220919 21:13:33.674" endtime="20220919 21:13:33.693"/>
+<msg timestamp="20220919 21:53:33.335" level="INFO">${texts} = https://en.wikipedia.org/wiki/Robot_Framework</msg>
+<status status="PASS" starttime="20220919 21:53:33.315" endtime="20220919 21:53:33.335"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${label}${texts}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220919 21:13:33.693" endtime="20220919 21:13:33.694"/>
+<status status="PASS" starttime="20220919 21:53:33.335" endtime="20220919 21:53:33.341"/>
 </kw>
 <kw name="Convert To String" library="BuiltIn">
 <var>${link}</var>
 <arg>${texts}</arg>
 <doc>Converts the given item to a Unicode string.</doc>
-<msg timestamp="20220919 21:13:33.694" level="INFO">${link} = https://en.wikipedia.org/wiki/Robot_Framework</msg>
-<status status="PASS" starttime="20220919 21:13:33.694" endtime="20220919 21:13:33.694"/>
+<msg timestamp="20220919 21:53:33.342" level="INFO">${link} = https://en.wikipedia.org/wiki/Robot_Framework</msg>
+<status status="PASS" starttime="20220919 21:53:33.341" endtime="20220919 21:53:33.342"/>
 </kw>
 <kw name="Append To File" library="OperatingSystem">
 <arg>${path}</arg>
 <arg>${label}\nLink--${link}\n--------------\n</arg>
 <arg>UTF-8</arg>
 <doc>Appends the given content to the specified file.</doc>
-<msg timestamp="20220919 21:13:33.694" level="INFO" html="true">Appended to file '&lt;a href="file://C:\Users\DELL\robotframework\RobotFramework\Automation\write_to_file.text"&gt;C:\Users\DELL\robotframework\RobotFramework\Automation\write_to_file.text&lt;/a&gt;'.</msg>
-<status status="PASS" starttime="20220919 21:13:33.694" endtime="20220919 21:13:33.694"/>
+<msg timestamp="20220919 21:53:33.344" level="INFO" html="true">Appended to file '&lt;a href="file://C:\Users\DELL\robotframework\RobotFramework\Automation\write_to_file.text"&gt;C:\Users\DELL\robotframework\RobotFramework\Automation\write_to_file.text&lt;/a&gt;'.</msg>
+<status status="PASS" starttime="20220919 21:53:33.342" endtime="20220919 21:53:33.344"/>
 </kw>
-<status status="PASS" starttime="20220919 21:13:33.639" endtime="20220919 21:13:33.694"/>
+<status status="PASS" starttime="20220919 21:53:33.278" endtime="20220919 21:53:33.345"/>
 </iter>
 <iter>
-<var name="${item}">&lt;selenium.webdriver.remote.webelement.WebElement (session="432f9e219899da073a2ea00e0e9f9a0b", element="94a348f7-d015-4824-863d-117f9162466a")&gt;</var>
+<var name="${item}">&lt;selenium.webdriver.remote.webelement.WebElement (session="3a7eb7cf3be24f44cf255e6dafc14083", element="e5c005c6-7d6d-4ab4-8d8f-b9b3c8224f30")&gt;</var>
 <kw name="Get Text" library="SeleniumLibrary">
 <var>${label}</var>
 <arg>${item}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20220919 21:13:33.735" level="INFO">${label} = Basic concepts of Robot Framework - Robocorp
+<msg timestamp="20220919 21:53:33.378" level="INFO">${label} = Basic concepts of Robot Framework - Robocorp
 https://robocorp.com › docs › robot-framework › basics</msg>
-<status status="PASS" starttime="20220919 21:13:33.694" endtime="20220919 21:13:33.735"/>
+<status status="PASS" starttime="20220919 21:53:33.345" endtime="20220919 21:53:33.378"/>
 </kw>
 <kw name="Get Element Attribute" library="SeleniumLibrary">
 <var>${texts}</var>
 <arg>${item}</arg>
 <arg>href</arg>
 <doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
-<msg timestamp="20220919 21:13:33.756" level="INFO">${texts} = https://robocorp.com/docs/languages-and-frameworks/robot-framework/basics</msg>
-<status status="PASS" starttime="20220919 21:13:33.735" endtime="20220919 21:13:33.756"/>
+<msg timestamp="20220919 21:53:33.397" level="INFO">${texts} = https://robocorp.com/docs/languages-and-frameworks/robot-framework/basics</msg>
+<status status="PASS" starttime="20220919 21:53:33.379" endtime="20220919 21:53:33.397"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${label}${texts}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220919 21:13:33.756" endtime="20220919 21:13:33.756"/>
+<status status="PASS" starttime="20220919 21:53:33.397" endtime="20220919 21:53:33.399"/>
 </kw>
 <kw name="Convert To String" library="BuiltIn">
 <var>${link}</var>
 <arg>${texts}</arg>
 <doc>Converts the given item to a Unicode string.</doc>
-<msg timestamp="20220919 21:13:33.759" level="INFO">${link} = https://robocorp.com/docs/languages-and-frameworks/robot-framework/basics</msg>
-<status status="PASS" starttime="20220919 21:13:33.756" endtime="20220919 21:13:33.759"/>
+<msg timestamp="20220919 21:53:33.400" level="INFO">${link} = https://robocorp.com/docs/languages-and-frameworks/robot-framework/basics</msg>
+<status status="PASS" starttime="20220919 21:53:33.399" endtime="20220919 21:53:33.400"/>
 </kw>
 <kw name="Append To File" library="OperatingSystem">
 <arg>${path}</arg>
 <arg>${label}\nLink--${link}\n--------------\n</arg>
 <arg>UTF-8</arg>
 <doc>Appends the given content to the specified file.</doc>
-<msg timestamp="20220919 21:13:33.761" level="INFO" html="true">Appended to file '&lt;a href="file://C:\Users\DELL\robotframework\RobotFramework\Automation\write_to_file.text"&gt;C:\Users\DELL\robotframework\RobotFramework\Automation\write_to_file.text&lt;/a&gt;'.</msg>
-<status status="PASS" starttime="20220919 21:13:33.759" endtime="20220919 21:13:33.761"/>
+<msg timestamp="20220919 21:53:33.403" level="INFO" html="true">Appended to file '&lt;a href="file://C:\Users\DELL\robotframework\RobotFramework\Automation\write_to_file.text"&gt;C:\Users\DELL\robotframework\RobotFramework\Automation\write_to_file.text&lt;/a&gt;'.</msg>
+<status status="PASS" starttime="20220919 21:53:33.401" endtime="20220919 21:53:33.403"/>
 </kw>
-<status status="PASS" starttime="20220919 21:13:33.694" endtime="20220919 21:13:33.761"/>
+<status status="PASS" starttime="20220919 21:53:33.345" endtime="20220919 21:53:33.403"/>
 </iter>
 <iter>
-<var name="${item}">&lt;selenium.webdriver.remote.webelement.WebElement (session="432f9e219899da073a2ea00e0e9f9a0b", element="57b00b4a-e1fd-42f1-8b91-f8407f3a4abf")&gt;</var>
+<var name="${item}">&lt;selenium.webdriver.remote.webelement.WebElement (session="3a7eb7cf3be24f44cf255e6dafc14083", element="7b9cab04-7c57-4b66-8902-36246eb4f65b")&gt;</var>
 <kw name="Get Text" library="SeleniumLibrary">
 <var>${label}</var>
 <arg>${item}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20220919 21:13:33.800" level="INFO">${label} = Robot Framework - Test Automation University - Applitools
+<msg timestamp="20220919 21:53:33.433" level="INFO">${label} = Robot Framework - Test Automation University - Applitools
 https://testautomationu.applitools.com › robot-framewo...</msg>
-<status status="PASS" starttime="20220919 21:13:33.761" endtime="20220919 21:13:33.800"/>
+<status status="PASS" starttime="20220919 21:53:33.404" endtime="20220919 21:53:33.433"/>
 </kw>
 <kw name="Get Element Attribute" library="SeleniumLibrary">
 <var>${texts}</var>
 <arg>${item}</arg>
 <arg>href</arg>
 <doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
-<msg timestamp="20220919 21:13:33.821" level="INFO">${texts} = https://testautomationu.applitools.com/robot-framework-tutorial/</msg>
-<status status="PASS" starttime="20220919 21:13:33.800" endtime="20220919 21:13:33.821"/>
+<msg timestamp="20220919 21:53:33.452" level="INFO">${texts} = https://testautomationu.applitools.com/robot-framework-tutorial/</msg>
+<status status="PASS" starttime="20220919 21:53:33.433" endtime="20220919 21:53:33.452"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${label}${texts}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220919 21:13:33.821" endtime="20220919 21:13:33.822"/>
+<status status="PASS" starttime="20220919 21:53:33.452" endtime="20220919 21:53:33.453"/>
 </kw>
 <kw name="Convert To String" library="BuiltIn">
 <var>${link}</var>
 <arg>${texts}</arg>
 <doc>Converts the given item to a Unicode string.</doc>
-<msg timestamp="20220919 21:13:33.822" level="INFO">${link} = https://testautomationu.applitools.com/robot-framework-tutorial/</msg>
-<status status="PASS" starttime="20220919 21:13:33.822" endtime="20220919 21:13:33.822"/>
+<msg timestamp="20220919 21:53:33.453" level="INFO">${link} = https://testautomationu.applitools.com/robot-framework-tutorial/</msg>
+<status status="PASS" starttime="20220919 21:53:33.453" endtime="20220919 21:53:33.453"/>
 </kw>
 <kw name="Append To File" library="OperatingSystem">
 <arg>${path}</arg>
 <arg>${label}\nLink--${link}\n--------------\n</arg>
 <arg>UTF-8</arg>
 <doc>Appends the given content to the specified file.</doc>
-<msg timestamp="20220919 21:13:33.822" level="INFO" html="true">Appended to file '&lt;a href="file://C:\Users\DELL\robotframework\RobotFramework\Automation\write_to_file.text"&gt;C:\Users\DELL\robotframework\RobotFramework\Automation\write_to_file.text&lt;/a&gt;'.</msg>
-<status status="PASS" starttime="20220919 21:13:33.822" endtime="20220919 21:13:33.822"/>
+<msg timestamp="20220919 21:53:33.458" level="INFO" html="true">Appended to file '&lt;a href="file://C:\Users\DELL\robotframework\RobotFramework\Automation\write_to_file.text"&gt;C:\Users\DELL\robotframework\RobotFramework\Automation\write_to_file.text&lt;/a&gt;'.</msg>
+<status status="PASS" starttime="20220919 21:53:33.453" endtime="20220919 21:53:33.458"/>
 </kw>
-<status status="PASS" starttime="20220919 21:13:33.761" endtime="20220919 21:13:33.822"/>
+<status status="PASS" starttime="20220919 21:53:33.404" endtime="20220919 21:53:33.458"/>
 </iter>
 <iter>
-<var name="${item}">&lt;selenium.webdriver.remote.webelement.WebElement (session="432f9e219899da073a2ea00e0e9f9a0b", element="57a7fb1f-6a87-45ce-977e-34814af6d146")&gt;</var>
+<var name="${item}">&lt;selenium.webdriver.remote.webelement.WebElement (session="3a7eb7cf3be24f44cf255e6dafc14083", element="6933fe98-c7f5-4486-b03f-c6e879a005f0")&gt;</var>
 <kw name="Get Text" library="SeleniumLibrary">
 <var>${label}</var>
 <arg>${item}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20220919 21:13:33.853" level="INFO">${label} = Robot Framework in Python - GeeksforGeeks
+<msg timestamp="20220919 21:53:33.493" level="INFO">${label} = Robot Framework in Python - GeeksforGeeks
 https://www.geeksforgeeks.org › robot-framework-in-p...</msg>
-<status status="PASS" starttime="20220919 21:13:33.822" endtime="20220919 21:13:33.853"/>
+<status status="PASS" starttime="20220919 21:53:33.458" endtime="20220919 21:53:33.493"/>
 </kw>
 <kw name="Get Element Attribute" library="SeleniumLibrary">
 <var>${texts}</var>
 <arg>${item}</arg>
 <arg>href</arg>
 <doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
-<msg timestamp="20220919 21:13:33.870" level="INFO">${texts} = https://www.geeksforgeeks.org/robot-framework-in-python/</msg>
-<status status="PASS" starttime="20220919 21:13:33.853" endtime="20220919 21:13:33.870"/>
+<msg timestamp="20220919 21:53:33.515" level="INFO">${texts} = https://www.geeksforgeeks.org/robot-framework-in-python/</msg>
+<status status="PASS" starttime="20220919 21:53:33.493" endtime="20220919 21:53:33.515"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${label}${texts}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220919 21:13:33.871" endtime="20220919 21:13:33.871"/>
+<status status="PASS" starttime="20220919 21:53:33.515" endtime="20220919 21:53:33.515"/>
 </kw>
 <kw name="Convert To String" library="BuiltIn">
 <var>${link}</var>
 <arg>${texts}</arg>
 <doc>Converts the given item to a Unicode string.</doc>
-<msg timestamp="20220919 21:13:33.871" level="INFO">${link} = https://www.geeksforgeeks.org/robot-framework-in-python/</msg>
-<status status="PASS" starttime="20220919 21:13:33.871" endtime="20220919 21:13:33.871"/>
+<msg timestamp="20220919 21:53:33.515" level="INFO">${link} = https://www.geeksforgeeks.org/robot-framework-in-python/</msg>
+<status status="PASS" starttime="20220919 21:53:33.515" endtime="20220919 21:53:33.515"/>
 </kw>
 <kw name="Append To File" library="OperatingSystem">
 <arg>${path}</arg>
 <arg>${label}\nLink--${link}\n--------------\n</arg>
 <arg>UTF-8</arg>
 <doc>Appends the given content to the specified file.</doc>
-<msg timestamp="20220919 21:13:33.871" level="INFO" html="true">Appended to file '&lt;a href="file://C:\Users\DELL\robotframework\RobotFramework\Automation\write_to_file.text"&gt;C:\Users\DELL\robotframework\RobotFramework\Automation\write_to_file.text&lt;/a&gt;'.</msg>
-<status status="PASS" starttime="20220919 21:13:33.871" endtime="20220919 21:13:33.871"/>
+<msg timestamp="20220919 21:53:33.515" level="INFO" html="true">Appended to file '&lt;a href="file://C:\Users\DELL\robotframework\RobotFramework\Automation\write_to_file.text"&gt;C:\Users\DELL\robotframework\RobotFramework\Automation\write_to_file.text&lt;/a&gt;'.</msg>
+<status status="PASS" starttime="20220919 21:53:33.515" endtime="20220919 21:53:33.515"/>
 </kw>
-<status status="PASS" starttime="20220919 21:13:33.822" endtime="20220919 21:13:33.871"/>
+<status status="PASS" starttime="20220919 21:53:33.458" endtime="20220919 21:53:33.515"/>
 </iter>
-<iter>
-<var name="${item}">&lt;selenium.webdriver.remote.webelement.WebElement (session="432f9e219899da073a2ea00e0e9f9a0b", element="d777ca53-1306-4a02-8ae8-a3c99f23961b")&gt;</var>
-<kw name="Get Text" library="SeleniumLibrary">
-<var>${label}</var>
-<arg>${item}</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20220919 21:13:33.910" level="INFO">${label} = How to Get Started with Robot Framework (with Example)
-https://smartbear.com › blog › how-to-get-started-with-...</msg>
-<status status="PASS" starttime="20220919 21:13:33.871" endtime="20220919 21:13:33.910"/>
-</kw>
-<kw name="Get Element Attribute" library="SeleniumLibrary">
-<var>${texts}</var>
-<arg>${item}</arg>
-<arg>href</arg>
-<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
-<msg timestamp="20220919 21:13:33.926" level="INFO">${texts} = https://smartbear.com/blog/how-to-get-started-with-robot-framework/</msg>
-<status status="PASS" starttime="20220919 21:13:33.910" endtime="20220919 21:13:33.926"/>
-</kw>
-<kw name="Log To Console" library="BuiltIn">
-<arg>${label}${texts}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220919 21:13:33.927" endtime="20220919 21:13:33.927"/>
-</kw>
-<kw name="Convert To String" library="BuiltIn">
-<var>${link}</var>
-<arg>${texts}</arg>
-<doc>Converts the given item to a Unicode string.</doc>
-<msg timestamp="20220919 21:13:33.927" level="INFO">${link} = https://smartbear.com/blog/how-to-get-started-with-robot-framework/</msg>
-<status status="PASS" starttime="20220919 21:13:33.927" endtime="20220919 21:13:33.927"/>
-</kw>
-<kw name="Append To File" library="OperatingSystem">
-<arg>${path}</arg>
-<arg>${label}\nLink--${link}\n--------------\n</arg>
-<arg>UTF-8</arg>
-<doc>Appends the given content to the specified file.</doc>
-<msg timestamp="20220919 21:13:33.927" level="INFO" html="true">Appended to file '&lt;a href="file://C:\Users\DELL\robotframework\RobotFramework\Automation\write_to_file.text"&gt;C:\Users\DELL\robotframework\RobotFramework\Automation\write_to_file.text&lt;/a&gt;'.</msg>
-<status status="PASS" starttime="20220919 21:13:33.927" endtime="20220919 21:13:33.927"/>
-</kw>
-<status status="PASS" starttime="20220919 21:13:33.871" endtime="20220919 21:13:33.927"/>
-</iter>
-<status status="PASS" starttime="20220919 21:13:33.308" endtime="20220919 21:13:33.927"/>
+<status status="PASS" starttime="20220919 21:53:32.422" endtime="20220919 21:53:33.515"/>
 </for>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220919 21:13:33.927" endtime="20220919 21:13:37.951"/>
+<status status="PASS" starttime="20220919 21:53:33.525" endtime="20220919 21:53:36.385"/>
 </kw>
-<status status="PASS" starttime="20220919 21:12:38.618" endtime="20220919 21:13:37.953"/>
+<status status="PASS" starttime="20220919 21:53:04.915" endtime="20220919 21:53:36.386"/>
 </test>
-<status status="PASS" starttime="20220919 21:12:37.023" endtime="20220919 21:13:37.956"/>
+<status status="PASS" starttime="20220919 21:53:03.249" endtime="20220919 21:53:36.391"/>
 </suite>
 <statistics>
 <total>
